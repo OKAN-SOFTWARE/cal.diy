@@ -41,15 +41,15 @@ vi.mock("./Event", () => ({
 const earlierEvent: CalendarEvent = {
   id: 0,
   title: "Ends early on Friday",
-  start: new Date("2026-10-21T20:00:00.000Z"),
-  end: new Date("2026-10-23T04:00:00.000Z"),
+  start: new Date(2026, 9, 21, 20, 0),
+  end: new Date(2026, 9, 23, 4, 0),
 };
 
 const laterEvent: CalendarEvent = {
   id: 1,
   title: "Ends later on Friday",
-  start: new Date("2026-10-22T20:00:00.000Z"),
-  end: new Date("2026-10-23T12:00:00.000Z"),
+  start: new Date(2026, 9, 22, 20, 0),
+  end: new Date(2026, 9, 23, 12, 0),
 };
 
 describe("EventList multi-day events", () => {

@@ -18,8 +18,8 @@ describe("Event tooltip placement", () => {
     const event: CalendarEvent = {
       id: 0,
       title: "Thursday to Friday event",
-      start: new Date("2026-10-22T20:00:00.000Z"),
-      end: new Date("2026-10-23T12:00:00.000Z"),
+      start: new Date(2026, 9, 22, 20, 0),
+      end: new Date(2026, 9, 23, 12, 0),
     };
 
     render(<Event event={event} day={dayjs("2026-10-23")} eventDuration={60} />);
